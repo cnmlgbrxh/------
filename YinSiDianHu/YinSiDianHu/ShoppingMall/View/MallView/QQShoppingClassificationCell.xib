@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="QQShoppingClassificationCellID" id="gTV-IL-0wX" customClass="QQShoppingClassificationCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电脑办公" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT5-Yr-V4l">
+                        <rect key="frame" x="0.0" y="105.5" width="150" height="19.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="AzX-wA-ifW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TXl-PV-aNN">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="95.5"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="qT5-Yr-V4l" firstAttribute="top" secondItem="TXl-PV-aNN" secondAttribute="bottom" constant="10" id="03Q-XX-gHq"/>
+                <constraint firstAttribute="trailing" secondItem="TXl-PV-aNN" secondAttribute="trailing" id="GaG-wz-71M"/>
+                <constraint firstItem="qT5-Yr-V4l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QoN-jK-Jmv"/>
+                <constraint firstItem="TXl-PV-aNN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rwf-Xb-ZR5"/>
+                <constraint firstAttribute="trailing" secondItem="qT5-Yr-V4l" secondAttribute="trailing" id="jPE-zD-i7s"/>
+                <constraint firstItem="TXl-PV-aNN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pZT-lK-ost"/>
+                <constraint firstAttribute="bottom" secondItem="qT5-Yr-V4l" secondAttribute="bottom" constant="30" id="zgT-9c-fuA"/>
+            </constraints>
+            <size key="customSize" width="150" height="155"/>
+            <connections>
+                <outlet property="imageView" destination="TXl-PV-aNN" id="OF9-3u-Kfz"/>
+                <outlet property="titleLabel" destination="qT5-Yr-V4l" id="ost-7b-LDT"/>
+            </connections>
+            <point key="canvasLocation" x="-373" y="-94.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

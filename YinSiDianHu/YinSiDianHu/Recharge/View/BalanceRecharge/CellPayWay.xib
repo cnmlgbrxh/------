@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="62" id="KGk-i7-Jjw" customClass="CellPayWay">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kQ5-tg-PHq">
+                        <rect key="frame" x="13" y="14.5" width="33" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="Bzr-Em-ckx"/>
+                            <constraint firstAttribute="width" constant="33" id="fEa-7H-e3k"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKJ-ws-2V5">
+                        <rect key="frame" x="62" y="14" width="250" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="mIJ-eV-IYG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快捷支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TB-yS-q49">
+                        <rect key="frame" x="62" y="36" width="258" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="CFb-FA-uFC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guC-dV-AjU">
+                        <rect key="frame" x="291" y="20" width="14" height="22"/>
+                        <state key="normal" image="setting_rightArrow"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Of-OR-QrF">
+                        <rect key="frame" x="8" y="61" width="312" height="0.5"/>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Vl0-yP-7xo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kQ5-tg-PHq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="5tw-iV-Xmp"/>
+                    <constraint firstItem="SKJ-ws-2V5" firstAttribute="leading" secondItem="kQ5-tg-PHq" secondAttribute="trailing" constant="16" id="Gu1-tQ-yKD"/>
+                    <constraint firstItem="guC-dV-AjU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ISL-cG-teC"/>
+                    <constraint firstItem="kQ5-tg-PHq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MZR-9V-snT"/>
+                    <constraint firstItem="0Of-OR-QrF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="SRm-Cf-JG4"/>
+                    <constraint firstAttribute="trailing" secondItem="0Of-OR-QrF" secondAttribute="trailing" id="Sae-tx-m29"/>
+                    <constraint firstItem="SKJ-ws-2V5" firstAttribute="top" secondItem="kQ5-tg-PHq" secondAttribute="top" id="TQw-7t-Mho"/>
+                    <constraint firstItem="9TB-yS-q49" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="WJy-aQ-0fL"/>
+                    <constraint firstItem="9TB-yS-q49" firstAttribute="leading" secondItem="kQ5-tg-PHq" secondAttribute="trailing" constant="16" id="XZP-ih-rEY"/>
+                    <constraint firstAttribute="trailing" secondItem="SKJ-ws-2V5" secondAttribute="trailing" constant="8" id="bub-6K-YW4"/>
+                    <constraint firstAttribute="bottom" secondItem="0Of-OR-QrF" secondAttribute="bottom" id="fFV-bF-caH"/>
+                    <constraint firstAttribute="trailing" secondItem="guC-dV-AjU" secondAttribute="trailing" constant="15" id="k0g-mN-DQ9"/>
+                    <constraint firstItem="9TB-yS-q49" firstAttribute="top" secondItem="SKJ-ws-2V5" secondAttribute="bottom" constant="1" id="tqY-aa-gUJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageVHead" destination="kQ5-tg-PHq" id="Yh8-Cj-mIm"/>
+                <outlet property="labPayWay" destination="SKJ-ws-2V5" id="MNt-So-hhC"/>
+                <outlet property="labSubTitle" destination="9TB-yS-q49" id="r0c-8N-c8e"/>
+            </connections>
+            <point key="canvasLocation" x="167" y="-68"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="setting_rightArrow" width="14" height="14"/>
+    </resources>
+</document>

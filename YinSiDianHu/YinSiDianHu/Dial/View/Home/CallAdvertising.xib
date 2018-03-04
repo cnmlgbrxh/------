@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CallAdvertising">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CallAdvertising" translatesAutoresizingMaskIntoConstraints="NO" id="oQU-g8-cJw">
+                    <rect key="frame" x="154" y="39" width="67" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oQU-g8-cJw" secondAttribute="height" multiplier="1:1" id="rws-lx-UqG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikg-Ir-wvX">
+                    <rect key="frame" x="62" y="127" width="313" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="k5A-d4-Tzk"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="中国大陆手机请拨 ">
+                            <attributes>
+                                <color key="NSColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name=".PingFangSC-Regular"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=": ">
+                            <attributes>
+                                <color key="NSColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="手机号">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cd-3B-gwc">
+                    <rect key="frame" x="62" y="172" width="313" height="21.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="中国固话请拨 ">
+                            <attributes>
+                                <color key="NSColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name=".PingFangSC-Regular"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=": ">
+                            <attributes>
+                                <color key="NSColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="区号+号码">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z80-cn-tZn">
+                    <rect key="frame" x="62" y="208.5" width="313" height="21.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="国际电话请拨 ">
+                            <attributes>
+                                <color key="NSColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=": ">
+                            <attributes>
+                                <color key="NSColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="00+国际+号码">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ikg-Ir-wvX" secondAttribute="trailing" id="7Pe-Fo-fqI"/>
+                <constraint firstItem="oQU-g8-cJw" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="134/750" id="H6s-3l-REt"/>
+                <constraint firstItem="9cd-3B-gwc" firstAttribute="top" secondItem="Ikg-Ir-wvX" secondAttribute="bottom" constant="15" id="J1Q-AV-SN3"/>
+                <constraint firstItem="oQU-g8-cJw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Rfw-MS-yzX"/>
+                <constraint firstItem="z80-cn-tZn" firstAttribute="leading" secondItem="Ikg-Ir-wvX" secondAttribute="leading" id="S7O-se-I9u"/>
+                <constraint firstItem="oQU-g8-cJw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="39" id="Szb-dZ-ftO"/>
+                <constraint firstAttribute="trailing" secondItem="9cd-3B-gwc" secondAttribute="trailing" id="VD9-CO-RQp"/>
+                <constraint firstItem="9cd-3B-gwc" firstAttribute="leading" secondItem="Ikg-Ir-wvX" secondAttribute="leading" id="YbR-Hz-PIz"/>
+                <constraint firstItem="Ikg-Ir-wvX" firstAttribute="top" secondItem="oQU-g8-cJw" secondAttribute="bottom" constant="21" id="bBu-0D-M4A"/>
+                <constraint firstItem="Ikg-Ir-wvX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="62" id="dq8-pZ-SZq"/>
+                <constraint firstItem="z80-cn-tZn" firstAttribute="top" secondItem="9cd-3B-gwc" secondAttribute="bottom" constant="15" id="gGA-Qo-to0"/>
+                <constraint firstAttribute="trailing" secondItem="z80-cn-tZn" secondAttribute="trailing" id="ngS-oi-Ira"/>
+            </constraints>
+            <point key="canvasLocation" x="-178.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CallAdvertising" width="67" height="67"/>
+    </resources>
+</document>

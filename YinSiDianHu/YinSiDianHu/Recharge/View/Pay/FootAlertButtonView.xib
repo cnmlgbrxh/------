@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FootAlertButtonView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzg-nu-3HN">
+                    <rect key="frame" x="10" y="19" width="355" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="aHd-gP-OWX"/>
+                    </constraints>
+                    <attributedString key="attributedText"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aug-oh-eu1">
+                    <rect key="frame" x="61" y="81" width="252.5" height="45"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="opa-ex-GQ6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="2.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="goRecharge:" destination="iN0-l3-epB" eventType="touchUpInside" id="vlx-dv-W3C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xzg-nu-3HN" secondAttribute="trailing" constant="10" id="9x6-e4-jD6"/>
+                <constraint firstItem="Aug-oh-eu1" firstAttribute="top" secondItem="xzg-nu-3HN" secondAttribute="bottom" constant="30" id="WOE-9E-huL"/>
+                <constraint firstItem="Aug-oh-eu1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fUi-ir-wAt"/>
+                <constraint firstItem="Aug-oh-eu1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="61.5" id="hbB-nQ-vQG"/>
+                <constraint firstItem="xzg-nu-3HN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="j1U-bN-fEG"/>
+                <constraint firstItem="xzg-nu-3HN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="zjo-Xv-RXF"/>
+            </constraints>
+            <connections>
+                <outlet property="btnRecharge" destination="Aug-oh-eu1" id="xb2-UF-6K0"/>
+                <outlet property="lab" destination="xzg-nu-3HN" id="Rph-dG-eV1"/>
+                <outlet property="layHeight" destination="opa-ex-GQ6" id="kfw-vp-8Rm"/>
+                <outlet property="layLabHeight" destination="aHd-gP-OWX" id="m9b-gT-cbb"/>
+                <outlet property="layLeft" destination="hbB-nQ-vQG" id="psi-PE-bRr"/>
+                <outlet property="layTop" destination="zjo-Xv-RXF" id="2aN-dX-TTW"/>
+                <outlet property="layTop1" destination="WOE-9E-huL" id="d46-fe-Lg9"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

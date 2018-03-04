@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayfailureViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="支付失败" translatesAutoresizingMaskIntoConstraints="NO" id="aQd-52-7t4">
+                    <rect key="frame" x="155" y="72.5" width="65" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="aQd-52-7t4" secondAttribute="height" multiplier="1:1" id="XP4-Rb-ope"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yID-eS-SCF">
+                    <rect key="frame" x="62" y="224.5" width="252" height="45"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Fu3-03-Buf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="重新付款">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="2.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="rePayment:" destination="-1" eventType="touchUpInside" id="h5E-7X-Vbk"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付失败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spz-3g-o0e">
+                    <rect key="frame" x="0.0" y="147.5" width="375" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="lY3-Lg-c62"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yID-eS-SCF" firstAttribute="top" secondItem="Spz-3g-o0e" secondAttribute="bottom" constant="60" id="2In-k1-NO0"/>
+                <constraint firstItem="aQd-52-7t4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72.5" id="5Qw-CB-Sip"/>
+                <constraint firstAttribute="trailing" secondItem="aQd-52-7t4" secondAttribute="trailing" constant="155" id="5lR-Yo-LIg"/>
+                <constraint firstItem="yID-eS-SCF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="61.5" id="ESR-70-lln"/>
+                <constraint firstItem="Spz-3g-o0e" firstAttribute="top" secondItem="aQd-52-7t4" secondAttribute="bottom" constant="10" id="FOX-sT-ora"/>
+                <constraint firstItem="Spz-3g-o0e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ONx-kw-j3X"/>
+                <constraint firstAttribute="trailing" secondItem="yID-eS-SCF" secondAttribute="trailing" constant="61.5" id="fqZ-JP-eO6"/>
+                <constraint firstAttribute="trailing" secondItem="Spz-3g-o0e" secondAttribute="trailing" id="h94-y9-baH"/>
+                <constraint firstItem="aQd-52-7t4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="155" id="uHP-ye-sAk"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="支付失败" width="66" height="66"/>
+    </resources>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QQShoppingPostAndPayCellID" id="KGk-i7-Jjw" customClass="QQShoppingPostAndPayCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPc-i4-YIb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Iy-LE-So0">
+                                <rect key="frame" x="10" y="8.5" width="33" height="33"/>
+                                <state key="normal" image="shopping_wechat"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wo6-N9-aEc">
+                                <rect key="frame" x="50" y="14" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9M-bW-soT">
+                                <rect key="frame" x="351" y="14" width="14" height="22"/>
+                                <state key="normal" image="shopping_orderRightArrow"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDJ-NM-2im">
+                                <rect key="frame" x="10" y="0.0" width="365" height="0.0"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="CFU-kd-1sX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wDJ-NM-2im" secondAttribute="trailing" id="6yd-b6-78I"/>
+                            <constraint firstItem="z9M-bW-soT" firstAttribute="centerY" secondItem="qPc-i4-YIb" secondAttribute="centerY" id="CXY-cf-BHO"/>
+                            <constraint firstItem="wDJ-NM-2im" firstAttribute="top" secondItem="qPc-i4-YIb" secondAttribute="top" id="DNK-C9-9vZ"/>
+                            <constraint firstItem="Wo6-N9-aEc" firstAttribute="centerY" secondItem="qPc-i4-YIb" secondAttribute="centerY" id="DNh-ig-4zV"/>
+                            <constraint firstItem="wDJ-NM-2im" firstAttribute="leading" secondItem="qPc-i4-YIb" secondAttribute="leading" constant="10" id="MJj-7E-bW2"/>
+                            <constraint firstItem="1Iy-LE-So0" firstAttribute="leading" secondItem="qPc-i4-YIb" secondAttribute="leading" constant="10" id="QI1-cJ-aZe"/>
+                            <constraint firstItem="1Iy-LE-So0" firstAttribute="centerY" secondItem="qPc-i4-YIb" secondAttribute="centerY" id="XW1-rM-gwu"/>
+                            <constraint firstItem="Wo6-N9-aEc" firstAttribute="leading" secondItem="1Iy-LE-So0" secondAttribute="trailing" constant="7" id="ZDt-xT-zuq"/>
+                            <constraint firstAttribute="trailing" secondItem="z9M-bW-soT" secondAttribute="trailing" constant="10" id="w9v-0M-eFv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qPc-i4-YIb" secondAttribute="trailing" id="7LY-R7-GpQ"/>
+                    <constraint firstItem="qPc-i4-YIb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dOB-dy-7OI"/>
+                    <constraint firstAttribute="bottom" secondItem="qPc-i4-YIb" secondAttribute="bottom" id="jvK-bf-fDP"/>
+                    <constraint firstItem="qPc-i4-YIb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="twZ-Ga-hpN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageBtn" destination="1Iy-LE-So0" id="0qW-HV-8Vc"/>
+                <outlet property="lineLeading" destination="MJj-7E-bW2" id="yuD-Xj-vwz"/>
+                <outlet property="nameLabel" destination="Wo6-N9-aEc" id="ZgK-9V-0MH"/>
+            </connections>
+            <point key="canvasLocation" x="-194" y="-68"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shopping_orderRightArrow" width="14" height="14"/>
+        <image name="shopping_wechat" width="33" height="33"/>
+    </resources>
+</document>

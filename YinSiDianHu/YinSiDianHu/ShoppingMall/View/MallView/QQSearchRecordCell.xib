@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QQSearchRecordCellID" rowHeight="77" id="KGk-i7-Jjw" customClass="QQSearchRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7A-19-CAy">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="76.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaY-HY-Mu4">
+                                <rect key="frame" x="15" y="38.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsU-5g-G5O">
+                                <rect key="frame" x="327" y="0.0" width="30" height="76.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="xcm-U7-2Tn"/>
+                                </constraints>
+                                <state key="normal" image="shopping_deleteRecord"/>
+                                <connections>
+                                    <action selector="deleteBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="atH-eJ-BXN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8x-De-v22">
+                                <rect key="frame" x="0.0" y="75.5" width="357" height="1"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ANW-lX-FAY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EsU-5g-G5O" firstAttribute="top" secondItem="e7A-19-CAy" secondAttribute="top" id="1cR-c7-KeA"/>
+                            <constraint firstAttribute="trailing" secondItem="EsU-5g-G5O" secondAttribute="trailing" id="6FM-o1-hmH"/>
+                            <constraint firstAttribute="trailing" secondItem="d8x-De-v22" secondAttribute="trailing" id="8dr-nN-Q3C"/>
+                            <constraint firstAttribute="bottom" secondItem="d8x-De-v22" secondAttribute="bottom" id="C9G-CN-tUw"/>
+                            <constraint firstItem="d8x-De-v22" firstAttribute="leading" secondItem="e7A-19-CAy" secondAttribute="leading" id="EwV-ZJ-wFT"/>
+                            <constraint firstItem="yaY-HY-Mu4" firstAttribute="centerY" secondItem="e7A-19-CAy" secondAttribute="centerY" id="Lje-Mu-Rrk"/>
+                            <constraint firstItem="EsU-5g-G5O" firstAttribute="centerY" secondItem="e7A-19-CAy" secondAttribute="centerY" id="Oux-Br-VFS"/>
+                            <constraint firstItem="yaY-HY-Mu4" firstAttribute="leading" secondItem="e7A-19-CAy" secondAttribute="leading" constant="15" id="W3X-fX-w1Y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="e7A-19-CAy" secondAttribute="trailing" id="Ff7-kb-Z9d"/>
+                    <constraint firstItem="e7A-19-CAy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZLv-JP-d83"/>
+                    <constraint firstItem="e7A-19-CAy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="f8O-bW-lOs"/>
+                    <constraint firstAttribute="bottom" secondItem="e7A-19-CAy" secondAttribute="bottom" id="uoA-4j-7hq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="line" destination="d8x-De-v22" id="x1C-ge-8cT"/>
+                <outlet property="titleLabel" destination="yaY-HY-Mu4" id="vmc-ab-kiN"/>
+            </connections>
+            <point key="canvasLocation" x="-120.5" y="-76.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shopping_deleteRecord" width="10" height="10"/>
+    </resources>
+</document>

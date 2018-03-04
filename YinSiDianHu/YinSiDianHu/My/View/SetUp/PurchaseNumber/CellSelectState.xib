@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="CellSelectState">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAY-gf-m2w">
+                        <rect key="frame" x="18" y="14" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="cb0-ru-STC"/>
+                            <constraint firstAttribute="width" constant="20" id="jrX-hv-Ewf"/>
+                        </constraints>
+                        <state key="normal" image="NormalButton"/>
+                        <state key="selected" image="SelectButton"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFd-tW-rG0">
+                        <rect key="frame" x="61" y="0.0" width="249" height="49.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LFd-tW-rG0" secondAttribute="trailing" constant="10" id="0km-t3-yhK"/>
+                    <constraint firstItem="LFd-tW-rG0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9SA-ka-N1s"/>
+                    <constraint firstItem="lAY-gf-m2w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Ndk-DL-YQf"/>
+                    <constraint firstItem="lAY-gf-m2w" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Xul-kh-HoF"/>
+                    <constraint firstItem="LFd-tW-rG0" firstAttribute="leading" secondItem="lAY-gf-m2w" secondAttribute="trailing" constant="23" id="oO9-LE-SuY"/>
+                    <constraint firstAttribute="bottom" secondItem="LFd-tW-rG0" secondAttribute="bottom" id="uFI-Ga-rNz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn" destination="lAY-gf-m2w" id="CWK-j0-gne"/>
+                <outlet property="labName" destination="LFd-tW-rG0" id="u0H-DL-sW1"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="NormalButton" width="20" height="20"/>
+        <image name="SelectButton" width="20" height="20"/>
+    </resources>
+</document>

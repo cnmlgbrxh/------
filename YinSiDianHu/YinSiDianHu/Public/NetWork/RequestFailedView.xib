@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RequestFailedView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的网络好像不太给力,请稍后再试" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGm-2O-MeY">
+                    <rect key="frame" x="0.0" y="270" width="375" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="lVY-0b-h9a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_ prompt" translatesAutoresizingMaskIntoConstraints="NO" id="sob-x5-9Fu">
+                    <rect key="frame" x="100" y="35" width="175" height="175"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="sob-x5-9Fu" secondAttribute="height" multiplier="1:1" id="c5u-bm-zLP"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5a-0R-Vg4">
+                    <rect key="frame" x="140" y="375" width="95" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="9aV-P4-N9c"/>
+                        <constraint firstAttribute="width" constant="95" id="SGS-cH-g6g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="重新加载">
+                        <color key="titleColor" red="0.52941176470588236" green="0.75294117647058822" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.52941176469999995" green="0.75294117650000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="reloadClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="vFK-N7-5h5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sob-x5-9Fu" secondAttribute="trailing" constant="100" id="D4R-oX-uVU"/>
+                <constraint firstAttribute="bottom" secondItem="x5a-0R-Vg4" secondAttribute="bottom" constant="262" id="FS1-e7-T6l"/>
+                <constraint firstAttribute="trailing" secondItem="GGm-2O-MeY" secondAttribute="trailing" id="J30-cJ-8rd"/>
+                <constraint firstItem="x5a-0R-Vg4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OSH-9f-Ry6"/>
+                <constraint firstItem="GGm-2O-MeY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PTU-ZZ-twh"/>
+                <constraint firstItem="sob-x5-9Fu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="XL8-Hc-vYN"/>
+                <constraint firstItem="GGm-2O-MeY" firstAttribute="top" secondItem="sob-x5-9Fu" secondAttribute="bottom" constant="60" id="Xf4-5S-pLs"/>
+                <constraint firstItem="sob-x5-9Fu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="jee-qY-mTf"/>
+            </constraints>
+            <point key="canvasLocation" x="-106.5" y="-287.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="comment_ prompt" width="175" height="175"/>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="建设中" translatesAutoresizingMaskIntoConstraints="NO" id="46u-To-7dC">
+                    <rect key="frame" x="85" y="35" width="205" height="205"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="46u-To-7dC" secondAttribute="height" multiplier="1:1" id="m0C-i1-aRY"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jia-CR-ZqZ">
+                    <rect key="frame" x="0.0" y="265" width="375" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="uEu-Pp-E0X"/>
+                    </constraints>
+                    <string key="text">增益功能建设中
+敬请期待...</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="46u-To-7dC" secondAttribute="trailing" constant="85" id="9ts-0M-Ykv"/>
+                <constraint firstItem="jia-CR-ZqZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ayp-TE-1Bz"/>
+                <constraint firstItem="46u-To-7dC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="SpU-K5-LRz"/>
+                <constraint firstItem="jia-CR-ZqZ" firstAttribute="top" secondItem="46u-To-7dC" secondAttribute="bottom" constant="25" id="U6e-1m-kpo"/>
+                <constraint firstItem="46u-To-7dC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="85" id="jF8-kK-DPS"/>
+                <constraint firstAttribute="trailing" secondItem="jia-CR-ZqZ" secondAttribute="trailing" id="uKX-0U-EKG"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="58.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="建设中" width="204" height="196"/>
+    </resources>
+</document>

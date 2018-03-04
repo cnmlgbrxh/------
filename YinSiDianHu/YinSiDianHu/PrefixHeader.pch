@@ -1,0 +1,120 @@
+//
+//  PrefixHeader.pch
+//  ShiZhiBao
+//
+//  Created by apple on 2017/3/28.
+//  Copyright © 2017年 XinFu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//外网
+#define URL_HEADER(urlEndWord) [NSString stringWithFormat:@"http://int.qiqutel.com/%@", urlEndWord]
+//内网
+//#define URL_HEADER(urlEndWord) [NSString stringWithFormat:@"http://112.124.115.81%@", urlEndWord]
+/**************调试******************/
+#ifdef DEBUG
+#define DELog(s, ... ) NSLog( @"[%@：in line: %d]-->[message: %@]", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else//
+#define DELog(s, ... )
+#endif
+
+#define WeakSelf __weak typeof(self) weakSelf = self;
+#define StringClass NSStringFromClass([self class])
+/**************获取版本信息******************/
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define BundleId    [NSBundle mainBundle].bundleIdentifier
+#define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+#define USERMANAGER [UserManager shareManager]
+#define USERNAME USERMANAGER.userName
+#define USERPASS [SAMKeychain passwordForService:BundleId account:USERMANAGER.userName]
+#define USERDEFAULT [NSUserDefaults standardUserDefaults]
+#define USERDEFAULT_object(key) [[NSUserDefaults standardUserDefaults] objectForKey:key]
+#define USERDEFAULT_setObject(object,key) [[NSUserDefaults standardUserDefaults] setObject:object forKey:key];
+#define USERDEFAULT_synchronize [[NSUserDefaults standardUserDefaults] synchronize]
+#define AlipaySchemeType  @"AlipaySchemes"
+
+//#define kGetUerID [[NSUserDefaults standardUserDefaults] objectForKey:@"user_id"]
+
+/**************颜色******************/
+
+#define HOMECOLOR [UIColor colorWithRed:246/255.0f green:247/255.0f blue:248/255.0f alpha:1.0]
+
+#define WHITECOLOR [UIColor whiteColor]
+
+#define BLACKCOLOR [UIColor blackColor]
+
+#define GRAYCOLOR [UIColor colorWithRed:237/255.0f green:237/255.0f blue:237/255.0f alpha:1.0]
+
+// Hex色值
+#define ColorHex(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define ColorHexWithAlpha(rgbValue,a) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
+//R G B 颜色
+#define COLOR(r,g,b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0]
+#define WS(wSelf)  __weak __typeof(&*self)wSelf = self;
+/**************尺寸******************/
+/*
+ #define MidX(v)            CGRectGetMidX((v).frame)
+ #define MidY(v)            CGRectGetMidY((v).frame)
+ 
+ #define MinX(v)            CGRectGetMinX((v).frame)
+ #define MinY(v)            CGRectGetMinY((v).frame)
+ 
+ #define MaxX(v)            CGRectGetMaxX((v).frame)
+ #define MaxY(v)            CGRectGetMaxY((v).frame)
+*/
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
+#define Scale(v) v*[UIScreen mainScreen].bounds.size.width/375.0
+#define Sc(v) v*[UIScreen mainScreen].bounds.size.width/750.0
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_W, SCREEN_H))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_W, SCREEN_H))
+/**************判断是iPhone******************/
+#define ISIPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+#define ISIPHONE_6 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )667 ) < DBL_EPSILON )
+#define ISIPHONE_6P ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )736.0 ) < DBL_EPSILON )
+
+#define LoadViewWithNIB(nibName) [[[NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil] lastObject]
+#define QQAdapterSpacingValure(x)  SCREEN_W > 375?(SCREEN_W * x / 375.0):x
+#define QQAdapter SCREEN_W/375
+/**************字符串判定******************/
+#define IsNilString(__String)     (__String == nil || [__String isEqualToString:@""] || [__String isEqualToString:@"null"] || [__String isEqualToString:@"<null>"] || [__String isEqualToString:@"(null)"])
+/**************公共宏定义******************/
+#define PaymentResults @"Payment Results"
+//-------------------------------------------
+#define APPAlipayNotification              @"AlipayNotification"
+#define APPAlipayDEF @"alipayDefeated"
+/**************第三方******************/
+#import "MJRefresh.h"
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+#import "IQKeyboardManager.h"
+#import "SAMKeychain.h"
+//#import "MJExtension.h"
+/**************常用类******************/
+#import "DataManager.h"
+#import "DataRequest.h"
+#import "NSDictionary+dic.h"
+#import "NSMutableDictionary+dicm.h"
+#import "SuperViewController.h"
+#import "MessageHUG.h"
+#import "UIView+View.h"
+#import "UserManager.h"
+#import "RSMBProgressHUDTool.h"
+#import "Tools.h"
+#import "UIColor+HexColor.h"
+
+/*************其他****************/
+#define QQIMAGE(imageName) [UIImage imageNamed:imageName]
+#define QQRIGHTBTN(TITLE,SELECTOR) [[UIBarButtonItem alloc] initWithTitle:TITLE style:UIBarButtonItemStyleDone target:self action:SELECTOR]
+
+#endif /* PrefixHeader_pch */

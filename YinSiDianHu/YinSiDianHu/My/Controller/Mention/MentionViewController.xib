@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MentionViewController">
+            <connections>
+                <outlet property="tableView" destination="0RN-Kz-esO" id="hYL-1U-Dte"/>
+                <outlet property="textFAmount" destination="abf-J5-rJE" id="6gL-8d-d48"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="grouped" separatorStyle="none" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="62" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="0RN-Kz-esO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="jW6-gd-pIu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提现金额(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUQ-Bf-Rn8">
+                                <rect key="frame" x="10" y="0.0" width="87" height="55"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9g-QL-eMf">
+                                <rect key="frame" x="305" y="12.5" width="60" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Ml1-Ec-2Lg"/>
+                                    <constraint firstAttribute="height" constant="29" id="loX-aC-swM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="全额">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.4941176471" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.96862745100000003" green="0.4941176471" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnAllAmountClick:" destination="-1" eventType="touchUpInside" id="N62-W6-HIf"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abf-J5-rJE">
+                                <rect key="frame" x="117" y="0.0" width="178" height="55"/>
+                                <color key="textColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="abf-J5-rJE" secondAttribute="bottom" id="L8Y-yN-KLK"/>
+                            <constraint firstItem="abf-J5-rJE" firstAttribute="top" secondItem="jW6-gd-pIu" secondAttribute="top" id="Mqu-JF-P3K"/>
+                            <constraint firstAttribute="bottom" secondItem="sUQ-Bf-Rn8" secondAttribute="bottom" id="NR1-tP-eRY"/>
+                            <constraint firstItem="abf-J5-rJE" firstAttribute="leading" secondItem="sUQ-Bf-Rn8" secondAttribute="trailing" constant="20" id="RVA-90-GuN"/>
+                            <constraint firstItem="Q9g-QL-eMf" firstAttribute="centerY" secondItem="jW6-gd-pIu" secondAttribute="centerY" id="rII-Zz-juL"/>
+                            <constraint firstAttribute="trailing" secondItem="Q9g-QL-eMf" secondAttribute="trailing" constant="10" id="rud-hs-AUt"/>
+                            <constraint firstItem="sUQ-Bf-Rn8" firstAttribute="top" secondItem="jW6-gd-pIu" secondAttribute="top" id="w3o-Rl-oVJ"/>
+                            <constraint firstItem="sUQ-Bf-Rn8" firstAttribute="leading" secondItem="jW6-gd-pIu" secondAttribute="leading" constant="10" id="wIE-qc-KoK"/>
+                            <constraint firstItem="Q9g-QL-eMf" firstAttribute="leading" secondItem="abf-J5-rJE" secondAttribute="trailing" constant="10" id="xE5-ep-cvf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kLm-fV-W0V"/>
+                        <outlet property="delegate" destination="-1" id="nkL-Zl-PHF"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0RN-Kz-esO" secondAttribute="bottom" id="0fw-up-2CE"/>
+                <constraint firstAttribute="trailing" secondItem="0RN-Kz-esO" secondAttribute="trailing" id="bVo-M3-R1l"/>
+                <constraint firstItem="0RN-Kz-esO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bXJ-0I-eFa"/>
+                <constraint firstItem="0RN-Kz-esO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o5T-6r-H3b"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutQiQuViewController">
+            <connections>
+                <outlet property="tableView" destination="55r-U8-VPX" id="QSY-iS-Gmh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="55r-U8-VPX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="632"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="Qah-bH-fvg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="奇趣电话" translatesAutoresizingMaskIntoConstraints="NO" id="3vA-uF-s81">
+                                <rect key="frame" x="133.5" y="40" width="108" height="108"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wj-lH-wFi">
+                                <rect key="frame" x="0.0" y="156" width="375" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="0zj-MC-5pg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6wj-lH-wFi" firstAttribute="top" secondItem="3vA-uF-s81" secondAttribute="bottom" constant="8" id="85q-DT-X4A"/>
+                            <constraint firstItem="3vA-uF-s81" firstAttribute="centerX" secondItem="Qah-bH-fvg" secondAttribute="centerX" id="IIC-hB-DDF"/>
+                            <constraint firstItem="6wj-lH-wFi" firstAttribute="leading" secondItem="Qah-bH-fvg" secondAttribute="leading" id="NS9-uz-fXh"/>
+                            <constraint firstItem="3vA-uF-s81" firstAttribute="top" secondItem="Qah-bH-fvg" secondAttribute="top" constant="40" id="dzG-P6-oSk"/>
+                            <constraint firstAttribute="trailing" secondItem="6wj-lH-wFi" secondAttribute="trailing" id="wXi-DF-kD7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="EL5-Wd-lkc"/>
+                        <outlet property="delegate" destination="-1" id="5ng-Hh-ZkZ"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright©2005-2017香港人人电信版权所有" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qb-Is-oXD">
+                    <rect key="frame" x="0.0" y="632" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="DjW-47-gwD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5qb-Is-oXD" secondAttribute="bottom" constant="14" id="9s1-en-WAS"/>
+                <constraint firstItem="55r-U8-VPX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Pk4-Tp-q8Q"/>
+                <constraint firstItem="5qb-Is-oXD" firstAttribute="top" secondItem="55r-U8-VPX" secondAttribute="bottom" id="XVr-Xx-Puw"/>
+                <constraint firstItem="55r-U8-VPX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cK6-uP-uEg"/>
+                <constraint firstAttribute="trailing" secondItem="55r-U8-VPX" secondAttribute="trailing" id="d6a-72-Mnu"/>
+                <constraint firstItem="5qb-Is-oXD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qeh-t3-JMk"/>
+                <constraint firstAttribute="trailing" secondItem="5qb-Is-oXD" secondAttribute="trailing" id="scD-7n-OK8"/>
+            </constraints>
+            <point key="canvasLocation" x="79.5" y="99.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="奇趣电话" width="108" height="108"/>
+    </resources>
+</document>

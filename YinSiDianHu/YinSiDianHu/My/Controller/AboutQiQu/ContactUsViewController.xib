@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactUsViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xan-Bi-Ldq">
+                    <rect key="frame" x="14" y="10" width="347" height="198"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="联系方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evh-Jv-h0e">
+                            <rect key="frame" x="18" y="20" width="319" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="FLK-zd-uK8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="客服 | 800123152" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKZ-aJ-5Bh">
+                            <rect key="frame" x="65" y="61" width="272" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="b6e-hp-tlK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QQ" translatesAutoresizingMaskIntoConstraints="NO" id="yei-jp-6ef">
+                            <rect key="frame" x="36" y="61" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="XHn-Zj-wxG"/>
+                                <constraint firstAttribute="width" constant="24" id="fnK-iW-E5t"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="官网 | www.qiqutel.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTm-df-XoS">
+                            <rect key="frame" x="65" y="100" width="272" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="TRu-0e-RTO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="官网" translatesAutoresizingMaskIntoConstraints="NO" id="Vff-XY-jUq">
+                            <rect key="frame" x="36" y="100" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="QCj-I5-8tB"/>
+                                <constraint firstAttribute="height" constant="24" id="ejE-XS-dcS"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信 | 奇趣电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIg-4t-1pq">
+                            <rect key="frame" x="65" y="139" width="272" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="ZFu-tO-8Fm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="微信图标" translatesAutoresizingMaskIntoConstraints="NO" id="55D-o1-C3g">
+                            <rect key="frame" x="36" y="139" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Lpw-cS-0bB"/>
+                                <constraint firstAttribute="width" constant="24" id="eo5-u5-dhH"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Evh-Jv-h0e" firstAttribute="top" secondItem="Xan-Bi-Ldq" secondAttribute="top" constant="20" id="150-l1-GaU"/>
+                        <constraint firstItem="Vff-XY-jUq" firstAttribute="top" secondItem="yei-jp-6ef" secondAttribute="bottom" constant="15" id="BQ6-4O-zmT"/>
+                        <constraint firstAttribute="trailing" secondItem="xKZ-aJ-5Bh" secondAttribute="trailing" constant="10" id="DgH-Ul-eGV"/>
+                        <constraint firstItem="yei-jp-6ef" firstAttribute="leading" secondItem="Xan-Bi-Ldq" secondAttribute="leading" constant="36" id="Gbd-oH-Xxq"/>
+                        <constraint firstItem="xKZ-aJ-5Bh" firstAttribute="top" secondItem="yei-jp-6ef" secondAttribute="top" id="H6b-8v-44r"/>
+                        <constraint firstAttribute="trailing" secondItem="dTm-df-XoS" secondAttribute="trailing" constant="10" id="LA5-dF-RrE"/>
+                        <constraint firstItem="55D-o1-C3g" firstAttribute="top" secondItem="Vff-XY-jUq" secondAttribute="bottom" constant="15" id="LhC-Vs-P0C"/>
+                        <constraint firstAttribute="height" constant="198" id="N7N-Uj-uK8"/>
+                        <constraint firstItem="fIg-4t-1pq" firstAttribute="top" secondItem="55D-o1-C3g" secondAttribute="top" id="O05-nH-kZn"/>
+                        <constraint firstItem="Evh-Jv-h0e" firstAttribute="leading" secondItem="Xan-Bi-Ldq" secondAttribute="leading" constant="18" id="Oc9-ve-Xqu"/>
+                        <constraint firstAttribute="trailing" secondItem="Evh-Jv-h0e" secondAttribute="trailing" constant="10" id="XpS-PI-jNz"/>
+                        <constraint firstItem="fIg-4t-1pq" firstAttribute="leading" secondItem="55D-o1-C3g" secondAttribute="trailing" constant="5" id="e7X-wz-9N8"/>
+                        <constraint firstItem="dTm-df-XoS" firstAttribute="leading" secondItem="Vff-XY-jUq" secondAttribute="trailing" constant="5" id="kaF-d4-3NJ"/>
+                        <constraint firstItem="dTm-df-XoS" firstAttribute="top" secondItem="Vff-XY-jUq" secondAttribute="top" id="lSn-go-K6s"/>
+                        <constraint firstItem="xKZ-aJ-5Bh" firstAttribute="leading" secondItem="yei-jp-6ef" secondAttribute="trailing" constant="5" id="pCp-wp-mni"/>
+                        <constraint firstItem="Vff-XY-jUq" firstAttribute="leading" secondItem="Xan-Bi-Ldq" secondAttribute="leading" constant="36" id="qNj-AK-Kbz"/>
+                        <constraint firstAttribute="trailing" secondItem="fIg-4t-1pq" secondAttribute="trailing" constant="10" id="scs-Go-Lwh"/>
+                        <constraint firstItem="55D-o1-C3g" firstAttribute="leading" secondItem="Xan-Bi-Ldq" secondAttribute="leading" constant="36" id="vN8-Q0-6zt"/>
+                        <constraint firstItem="yei-jp-6ef" firstAttribute="top" secondItem="Evh-Jv-h0e" secondAttribute="bottom" constant="20" id="w8n-W6-q0t"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZH4-sm-Akk">
+                    <rect key="frame" x="0.0" y="581" width="375" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="88w-CU-mgx"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="本内容最终解释权和修改权归本公司所有">
+                            <attributes>
+                                <color key="NSColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                <integer key="NSLigature" value="0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="44.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="44.5">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                            <attributes>
+                                <color key="NSColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                <integer key="NSLigature" value="0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="44.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="44.5">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本公司随时根据现况修改本界面说明">
+                            <attributes>
+                                <color key="NSColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                <integer key="NSLigature" value="0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="44.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="44.5">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+2017-08-01</string>
+                            <attributes>
+                                <color key="NSColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                <integer key="NSLigature" value="0"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="44.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                    <tabStops>
+                                        <textTab alignment="left" location="44.5">
+                                            <options/>
+                                        </textTab>
+                                    </tabStops>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Xan-Bi-Ldq" secondAttribute="trailing" constant="14" id="0vk-mT-9rC"/>
+                <constraint firstAttribute="bottom" secondItem="ZH4-sm-Akk" secondAttribute="bottom" constant="20" id="46O-7V-gEw"/>
+                <constraint firstAttribute="trailing" secondItem="ZH4-sm-Akk" secondAttribute="trailing" id="QY3-fB-hi5"/>
+                <constraint firstItem="Xan-Bi-Ldq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="XIL-JQ-fLc"/>
+                <constraint firstItem="Xan-Bi-Ldq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="Z2D-yR-nrh"/>
+                <constraint firstItem="ZH4-sm-Akk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rEk-8c-ogt"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="QQ" width="24" height="24"/>
+        <image name="官网" width="24" height="24"/>
+        <image name="微信图标" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QQMoneyDetaiSecondTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhS-3H-dek">
+                    <rect key="frame" x="0.0" y="7" width="375" height="53"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money_detail_ introduce" translatesAutoresizingMaskIntoConstraints="NO" id="rE8-eD-irq">
+                            <rect key="frame" x="10" y="13.5" width="26" height="26"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品说明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okQ-wb-wmM">
+                            <rect key="frame" x="46" y="18" width="57.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.29411764705882354" green="0.29411764705882354" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efz-6G-zfl">
+                            <rect key="frame" x="325" y="0.0" width="50" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="EPf-oE-QMi"/>
+                            </constraints>
+                            <state key="normal" image="money_detail_downArror">
+                                <color key="titleColor" red="0.96862745098039216" green="0.49411764705882355" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="moreBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="pKX-Cf-7Tc"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FME-dC-2Wb">
+                            <rect key="frame" x="332" y="0.0" width="33" height="53"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.96862745098039216" green="0.49411764705882355" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="efz-6G-zfl" secondAttribute="bottom" id="3kf-pw-iKL"/>
+                        <constraint firstItem="rE8-eD-irq" firstAttribute="leading" secondItem="nhS-3H-dek" secondAttribute="leading" constant="10" id="4l9-Er-y7D"/>
+                        <constraint firstAttribute="bottom" secondItem="FME-dC-2Wb" secondAttribute="bottom" id="9s6-H6-teG"/>
+                        <constraint firstAttribute="trailing" secondItem="efz-6G-zfl" secondAttribute="trailing" id="C3F-zA-Uyz"/>
+                        <constraint firstAttribute="trailing" secondItem="FME-dC-2Wb" secondAttribute="trailing" constant="10" id="Oym-UL-2kD"/>
+                        <constraint firstItem="okQ-wb-wmM" firstAttribute="leading" secondItem="rE8-eD-irq" secondAttribute="trailing" constant="10" id="SXJ-1Q-3hH"/>
+                        <constraint firstItem="FME-dC-2Wb" firstAttribute="top" secondItem="nhS-3H-dek" secondAttribute="top" id="YIr-rc-bsb"/>
+                        <constraint firstItem="efz-6G-zfl" firstAttribute="top" secondItem="nhS-3H-dek" secondAttribute="top" id="ZQT-bF-EH7"/>
+                        <constraint firstItem="okQ-wb-wmM" firstAttribute="centerY" secondItem="nhS-3H-dek" secondAttribute="centerY" id="d1O-ta-LVW"/>
+                        <constraint firstItem="rE8-eD-irq" firstAttribute="centerY" secondItem="nhS-3H-dek" secondAttribute="centerY" id="pUY-Tj-ks3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nhS-3H-dek" secondAttribute="trailing" id="9h4-7E-TjH"/>
+                <constraint firstItem="nhS-3H-dek" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="M6h-UY-vKB"/>
+                <constraint firstAttribute="bottom" secondItem="nhS-3H-dek" secondAttribute="bottom" id="PZV-VX-aHr"/>
+                <constraint firstItem="nhS-3H-dek" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="QXe-Ri-4A1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrorBtn" destination="efz-6G-zfl" id="2Qu-CL-3WD"/>
+                <outlet property="leftImageView" destination="rE8-eD-irq" id="8l7-vn-WMl"/>
+                <outlet property="rightBtnWidth" destination="EPf-oE-QMi" id="fXZ-Gh-0OH"/>
+                <outlet property="rightLabel" destination="FME-dC-2Wb" id="HpZ-Mv-u6v"/>
+                <outlet property="titleLabel" destination="okQ-wb-wmM" id="a1q-Ko-YzR"/>
+            </connections>
+            <point key="canvasLocation" x="-91.5" y="-41"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="money_detail_ introduce" width="26" height="26"/>
+        <image name="money_detail_downArror" width="17" height="17"/>
+    </resources>
+</document>

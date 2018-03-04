@@ -1,0 +1,26 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'YinSiDianHu' do
+  pod 'AFNetworking'
+  pod 'IQKeyboardManager'
+  pod 'SDWebImage'
+  pod 'MJRefresh'
+  pod 'YYCache'
+  pod 'Toast'
+  pod 'MBProgressHUD'
+  pod 'Masonry'
+  #pod 'MJExtension'
+  pod 'FMDB'
+  pod 'SAMKeychain'
+  pod 'SDCycleScrollView','~> 1.66'
+  pod 'ReactiveCocoa', '2.5'
+  pod 'WMPageController', '~> 2.0.2'
+  pod 'HYBNetworking'
+  #pod 'YYModel'
+  pod 'UITableView+FDTemplateLayoutCell', '~> 1.5.beta'
+  # 集成微信
+  pod 'UMengUShare/Social/WeChat'
+  # 集成QQ
+  pod 'UMengUShare/Social/QQ'
+end

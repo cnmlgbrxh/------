@@ -1,0 +1,6 @@
+framework module Pods_YinSiDianHu {
+  umbrella header "Pods-YinSiDianHu-umbrella.h"
+
+  export *
+  module * { export * }
+}

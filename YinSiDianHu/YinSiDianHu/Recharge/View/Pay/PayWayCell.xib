@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PayWayCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s6a-mu-aLG">
+                        <rect key="frame" x="10" y="9.5" width="33" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="1XH-dD-ltv"/>
+                            <constraint firstAttribute="width" constant="33" id="XBy-9K-P3F"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gX8-1s-rak">
+                        <rect key="frame" x="53" y="8" width="269" height="37.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CH-Fg-b85">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="vKJ-7e-zLk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCL-g6-3z5">
+                        <rect key="frame" x="296" y="16" width="14" height="22"/>
+                        <state key="normal" image="setting_rightArrow"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gX8-1s-rak" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="10" id="1R3-1I-gr8"/>
+                    <constraint firstItem="gX8-1s-rak" firstAttribute="leading" secondItem="s6a-mu-aLG" secondAttribute="trailing" constant="10" id="28u-as-D6U"/>
+                    <constraint firstItem="7CH-Fg-b85" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DIQ-f2-NNj"/>
+                    <constraint firstItem="7CH-Fg-b85" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Eqh-V1-ewY"/>
+                    <constraint firstAttribute="trailing" secondItem="rCL-g6-3z5" secondAttribute="trailing" constant="10" id="XfA-Nb-OK8"/>
+                    <constraint firstItem="rCL-g6-3z5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fIZ-h6-CcD"/>
+                    <constraint firstAttribute="trailing" secondItem="7CH-Fg-b85" secondAttribute="trailing" id="hBT-7b-Xly"/>
+                    <constraint firstItem="s6a-mu-aLG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ksP-pu-Pec"/>
+                    <constraint firstItem="gX8-1s-rak" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="llh-eS-7qt"/>
+                    <constraint firstItem="s6a-mu-aLG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oUW-T0-iug"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gX8-1s-rak" secondAttribute="bottom" id="xZD-Tg-35a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageV" destination="s6a-mu-aLG" id="l8b-aD-pkt"/>
+                <outlet property="labPayWay" destination="gX8-1s-rak" id="HL9-xx-Wn7"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="setting_rightArrow" width="14" height="14"/>
+    </resources>
+</document>
